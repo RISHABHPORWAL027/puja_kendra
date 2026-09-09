@@ -489,29 +489,6 @@ export const pujasData: PujaService[] = [
     ]
   },
   {
-    id: "new-vehicle-puja",
-    slug: "new-vehicle-puja",
-    name: "General Vehicle Puja",
-    hindiName: "सामान्य वाहन पूजा",
-    category: "Vehicle",
-    description: "Puja for second-hand, re-purchased, or existing vehicles to refresh positive energy and safe operation.",
-    shortDescription: "Refreshed Vahana Pujan for pre-owned cars, bikes, or family vehicles.",
-    deity: "Lord Ganesha",
-    occasions: ["New Vehicle"],
-    duration: "30 - 45 Minutes",
-    modes: ["home", "online"],
-    startingPrice: 1101,
-    samagriIncluded: true,
-    samagri: ["Lemons", "Coconut", "Kumkum", "Camphor", "Flowers"],
-    image: "/images/pujas/vehicle-puja.jpg",
-    faqs: [
-      {
-        question: "Is vehicle Puja required for second-hand cars?",
-        answer: "Yes, it is highly recommended to cleanse past owner energy and start fresh."
-      }
-    ]
-  },
-  {
     id: "commercial-vehicle-puja",
     slug: "commercial-vehicle-puja",
     name: "Commercial Vehicle Puja (Truck / Bus / Auto / Taxi)",

@@ -9,7 +9,7 @@ export const astrologyData: AstrologyService[] = [
     category: "Kundli",
     shortDescription: "Complete birth chart reading covering planetary positions, Dasha cycles, strengths, and life guidance.",
     description: "Detailed analysis of your birth chart (Lagna, Rashi, Bhava, and Dasha) by experienced Vedic Astrologers. Receive clarity on career, health, relationships, financial prospects, and upcoming Dasha periods.",
-    startingPrice: 1100,
+    startingPrice: 1101,
     benefits: [
       "Detailed 12-house planetary positioning analysis",
       "Current Mahadasha & Antardasha predictions",
@@ -35,7 +35,7 @@ export const astrologyData: AstrologyService[] = [
     category: "Kundli",
     shortDescription: "Ashta Koota Kundli matching for prospective bride and groom to ensure matrimonial harmony.",
     description: "In-depth analysis of 36 Guns (Ashta Koota Milan), Manglik Dosh check, Bhakoot Dosh evaluation, and Nadi Dosh check for prospective couples before marriage.",
-    startingPrice: 1500,
+    startingPrice: 1501,
     benefits: [
       "36 Gun Milan score calculation",
       "Check for Nadi, Bhakoot, and Mangal Dosh",
@@ -57,7 +57,7 @@ export const astrologyData: AstrologyService[] = [
     category: "Dosha & Remedies",
     shortDescription: "Identify Mars affliction (Manglik Dosh) in birth chart and learn effective Shanti remedies.",
     description: "Comprehensive evaluation of Mars placement in 1st, 4th, 7th, 8th, or 12th house. Understand whether Manglik Dosh is Anshik (partial) or Purna (full), and receive authentic Vedic Shanti recommendations.",
-    startingPrice: 1100,
+    startingPrice: 1101,
     benefits: [
       "Clear verification of Mangal Dosh in Lagna and Moon charts",
       "Identification of Dosh Cancellation (Dosh Bhanga) factors",
@@ -78,7 +78,7 @@ export const astrologyData: AstrologyService[] = [
     category: "Dosha & Remedies",
     shortDescription: "Analyze Rahu-Ketu planetary alignment and remedies for career or personal obstacles.",
     description: "Detailed evaluation of Rahu and Ketu enclosing all 7 planets in your horoscope. Understand which of the 12 types of Kaal Sarp Dosh is present and get step-by-step guidance on Rahu-Ketu Shanti Pujas.",
-    startingPrice: 1100,
+    startingPrice: 1101,
     benefits: [
       "Identification of exact Kaal Sarp Dosh type (Anant, Kulik, Vasuki, etc.)",
       "Understanding obstacle root causes in business or family life",
@@ -99,7 +99,7 @@ export const astrologyData: AstrologyService[] = [
     category: "Astrology Consultation",
     shortDescription: "Astrological guidance for job search, promotion, business expansion, and financial growth.",
     description: "Focuses on the 10th (Karma), 2nd (Wealth), and 11th (Gains) houses to help you choose suitable career fields, favorable job change timing, and business growth remedies.",
-    startingPrice: 1200,
+    startingPrice: 1501,
     benefits: [
       "Ideal profession or business sector recommendation",
       "Timing for job change, business expansion, or investments",
@@ -120,7 +120,7 @@ export const astrologyData: AstrologyService[] = [
     category: "Dosha & Remedies",
     shortDescription: "Identify ancestral debts in birth chart and perform Shradh & Shanti rituals for family peace.",
     description: "Analyzes Sun, Rahu, and 9th house afflictions in horoscope. Guidance on performing Narayan Bali, Pitra Tarpan, and Shanti Havan for peace and progeny blessings.",
-    startingPrice: 1100,
+    startingPrice: 1101,
     benefits: [
       "Relief from chronic family disputes and unexplainable delays",
       "Blessings of ancestors (Pitrudeva) for family growth",
@@ -141,7 +141,7 @@ export const astrologyData: AstrologyService[] = [
     category: "Astrology Consultation",
     shortDescription: "Examine strength of all 9 planets (Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu).",
     description: "Evaluates favorable (Yogakaraka) and weak (Maraka/Afflicted) planets in your chart. Provides tailored advice on Mantra chanting, charity, and planet-specific Pujas.",
-    startingPrice: 1100,
+    startingPrice: 1101,
     benefits: [
       "Comprehensive planet strength scorecard",
       "Mantra Jaap count recommendations",

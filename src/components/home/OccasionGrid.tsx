@@ -16,18 +16,22 @@ import {
   ArrowRight
 } from "lucide-react";
 
-const iconMap: Record<string, React.ReactNode> = {
-  Home: <Home className="w-6 h-6 text-amber-700" />,
-  Car: <Car className="w-6 h-6 text-amber-700" />,
-  Building2: <Building2 className="w-6 h-6 text-amber-700" />,
-  Heart: <Heart className="w-6 h-6 text-amber-700" />,
-  Baby: <Baby className="w-6 h-6 text-amber-700" />,
-  Users: <Users className="w-6 h-6 text-amber-700" />,
-  TrendingUp: <TrendingUp className="w-6 h-6 text-amber-700" />,
-  Sparkles: <Sparkles className="w-6 h-6 text-amber-700" />,
-  Flame: <Flame className="w-6 h-6 text-amber-700" />,
-  Calendar: <Calendar className="w-6 h-6 text-amber-700" />,
-  Video: <Video className="w-6 h-6 text-amber-700" />
+const renderIcon = (iconName: string) => {
+  const props = { className: "w-6 h-6 text-amber-700 group-hover:text-amber-100 transition-colors duration-200" };
+  switch (iconName) {
+    case "Home": return <Home {...props} />;
+    case "Car": return <Car {...props} />;
+    case "Building2": return <Building2 {...props} />;
+    case "Heart": return <Heart {...props} />;
+    case "Baby": return <Baby {...props} />;
+    case "Users": return <Users {...props} />;
+    case "TrendingUp": return <TrendingUp {...props} />;
+    case "Sparkles": return <Sparkles {...props} />;
+    case "Flame": return <Flame {...props} />;
+    case "Calendar": return <Calendar {...props} />;
+    case "Video": return <Video {...props} />;
+    default: return <Sparkles {...props} />;
+  }
 };
 
 export const OccasionGrid: React.FC = () => {
@@ -53,10 +57,8 @@ export const OccasionGrid: React.FC = () => {
               href={occ.slug === "online-puja" ? "/online-puja" : `/puja?occasion=${encodeURIComponent(occ.name)}`}
               className="group bg-white border border-amber-200/80 rounded-2xl p-4 sm:p-5 text-center shadow-xs hover:shadow-xl hover:border-amber-400 hover:-translate-y-1 transition-all duration-200 flex flex-col items-center justify-between"
             >
-              <div className="w-12 h-12 rounded-2xl bg-amber-100/80 group-hover:bg-amber-700 group-hover:text-white transition-colors flex items-center justify-center mb-3">
-                <span className="group-hover:text-amber-100 transition-colors">
-                  {iconMap[occ.icon]}
-                </span>
+              <div className="w-12 h-12 rounded-2xl bg-amber-100/80 group-hover:bg-amber-800 transition-all duration-200 flex items-center justify-center mb-3 group-hover:scale-110 shadow-xs group-hover:shadow-md">
+                {renderIcon(occ.icon)}
               </div>
               <div>
                 <h3 className="text-sm sm:text-base font-bold font-serif text-amber-950 group-hover:text-amber-700 transition-colors">

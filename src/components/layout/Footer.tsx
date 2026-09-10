@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-600 to-rose-600 flex items-center justify-center shadow-md">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-800 to-amber-900 flex items-center justify-center shadow-md border border-amber-600/50">
                 <Flame className="w-5 h-5 text-amber-100 fill-amber-300" />
               </div>
               <div>
@@ -146,7 +146,7 @@ export const Footer: React.FC = () => {
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-amber-300/70 gap-4">
           <p>© {new Date().getFullYear()} Puja Kendra. All rights reserved.</p>
           <p className="flex items-center gap-1">
-            Crafted for Indian spiritual devotion with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
+            Crafted for Indian spiritual devotion with <Heart className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
           </p>
         </div>
       </div>

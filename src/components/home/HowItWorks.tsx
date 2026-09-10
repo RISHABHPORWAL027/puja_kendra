@@ -5,27 +5,27 @@ export const HowItWorks: React.FC = () => {
   const steps = [
     {
       step: "1",
-      icon: <Search className="w-5 h-5 text-amber-700" />,
-      title: "1. Puja Chuniye (पूजा चुनिए)",
-      description: "Apne shubh avsar, griha pravesh ya festival ke anusaar Puja chuniye."
+      icon: <Search className="w-5 h-5 text-amber-200" />,
+      title: "1. Select Your Puja",
+      description: "Choose the suitable ritual for your home occasion, festival, or life milestone."
     },
     {
       step: "2",
-      icon: <Send className="w-5 h-5 text-amber-700" />,
-      title: "2. Inquiry Bhejiye (जानकारी भेजिए)",
-      description: "Apni pasand ki date, samay slot aur samagri option select karein."
+      icon: <Send className="w-5 h-5 text-amber-200" />,
+      title: "2. Send Inquiry",
+      description: "Pick your preferred date, time slot, and samagri preference."
     },
     {
       step: "3",
-      icon: <MessageSquare className="w-5 h-5 text-amber-700" />,
-      title: "3. WhatsApp Par Confirm Karein",
-      description: "Hamari team WhatsApp par Panditji ki availability aur timing confirm karegi."
+      icon: <MessageSquare className="w-5 h-5 text-amber-200" />,
+      title: "3. Confirm on WhatsApp",
+      description: "Our team instantly confirms Panditji availability and auspicious Muhurat."
     },
     {
       step: "4",
-      icon: <Flame className="w-5 h-5 text-amber-700" />,
-      title: "4. Puja Karwayein (पूजा संपन्न करें)",
-      description: "Panditji ghar aakar ya live Google Meet video call par Puja karwayenge."
+      icon: <Flame className="w-5 h-5 text-amber-200" />,
+      title: "4. Perform Rituals",
+      description: "Panditji conducts authentic Vedic Puja at your home or live on Google Meet."
     }
   ];
 
@@ -34,13 +34,13 @@ export const HowItWorks: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="text-xs font-bold uppercase tracking-wider text-amber-300 bg-amber-900/80 px-3 py-1 rounded-full border border-amber-800">
-            Aasan 4-Step Process (सरल प्रक्रिया)
+            Simple 4-Step Process
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold font-serif text-amber-50 mt-3">
-            How Puja Kendra Works (पूजा केंद्र कैसे काम करता है)
+            How Puja Kendra Works
           </h2>
           <p className="text-amber-200/80 text-sm sm:text-base mt-2">
-            Koi mushkil form ya registration nahi. Seedhe WhatsApp par aasan booking karein.
+            No complex registration or forms required. Book directly via WhatsApp.
           </p>
         </div>
 

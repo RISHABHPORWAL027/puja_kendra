@@ -50,12 +50,12 @@ export const OccasionGrid: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5 sm:gap-4 md:gap-5">
           {occasionsData.map((occ) => (
             <Link
               key={occ.id}
               href={occ.slug === "online-puja" ? "/online-puja" : `/puja?occasion=${encodeURIComponent(occ.name)}`}
-              className="group bg-white border border-amber-200/80 rounded-2xl p-4 sm:p-5 text-center shadow-xs hover:shadow-xl hover:border-amber-400 hover:-translate-y-1 transition-all duration-200 flex flex-col items-center justify-between"
+              className="group bg-white border border-amber-200/80 rounded-2xl p-3 sm:p-5 text-center shadow-xs hover:shadow-xl hover:border-amber-400 hover:-translate-y-1 transition-all duration-200 flex flex-col items-center justify-between"
             >
               <div className="w-12 h-12 rounded-2xl bg-amber-100/80 group-hover:bg-amber-800 transition-all duration-200 flex items-center justify-center mb-3 group-hover:scale-110 shadow-xs group-hover:shadow-md">
                 {renderIcon(occ.icon)}

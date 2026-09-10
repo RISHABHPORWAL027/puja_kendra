@@ -10,7 +10,7 @@ export const WhyChooseUs: React.FC = () => {
     },
     {
       icon: <CheckCircle2 className="w-6 h-6 text-amber-700" />,
-      title: "Simple Booking Process (सरल बुकिंग)",
+      title: "Simple Booking Process",
       desc: "No accounts, passwords, or complex checkout portals. Book in seconds via WhatsApp."
     },
     {
@@ -51,7 +51,7 @@ export const WhyChooseUs: React.FC = () => {
         </div>
 
         {/* Highlight Banner: Degree Verified Pandits */}
-        <div className="bg-gradient-to-r from-amber-900 via-amber-800 to-rose-950 text-white rounded-2xl p-6 mb-10 shadow-md flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="bg-gradient-to-r from-amber-900 via-amber-800 to-amber-950 text-white rounded-2xl p-6 mb-10 shadow-md flex flex-col md:flex-row items-center justify-between gap-4 border border-amber-800/50">
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 rounded-2xl bg-amber-400/20 text-amber-300 flex items-center justify-center shrink-0 border border-amber-400/30">
               <Award className="w-8 h-8 text-amber-300" />

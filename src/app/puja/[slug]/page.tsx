@@ -81,7 +81,7 @@ export default async function PujaDetailPage({ params }: PageProps) {
           <div className="bg-white border border-amber-200/90 rounded-3xl overflow-hidden shadow-md mb-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
               {/* Left Column: Image Banner */}
-              <div className="lg:col-span-5 bg-gradient-to-br from-amber-800 via-amber-900 to-rose-950 relative min-h-[300px] lg:min-h-full flex items-center justify-center p-6">
+              <div className="lg:col-span-5 bg-gradient-to-br from-amber-900 via-amber-800 to-amber-950 relative min-h-[300px] lg:min-h-full flex items-center justify-center p-6">
                 <img
                   src={puja.image}
                   alt={puja.name}

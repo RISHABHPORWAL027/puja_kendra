@@ -28,6 +28,13 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
   onClose
 }) => {
   const [mode, setMode] = useState<PujaMode>(initialMode);
+
+  const handleModeChange = (newMode: PujaMode) => {
+    setMode(newMode);
+    if (newMode === "online") {
+      setSamagriPreference("Customer arranges Samagri");
+    }
+  };
   const [fullName, setFullName] = useState("");
   const [mobile, setMobile] = useState("");
   const [address, setAddress] = useState("");
@@ -108,7 +115,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-in fade-in duration-200">
       <div className="bg-amber-50/95 border border-amber-200/80 rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto relative">
         {/* Header */}
-        <div className="bg-gradient-to-r from-amber-700 via-amber-800 to-rose-900 text-amber-50 p-5 rounded-t-2xl relative">
+        <div className="bg-gradient-to-r from-amber-900 via-amber-800 to-amber-950 text-amber-50 p-5 rounded-t-2xl relative">
           <button
             onClick={onClose}
             className="absolute top-4 right-4 p-1.5 rounded-full bg-amber-950/40 text-amber-100 hover:bg-amber-950/60 hover:text-white transition-colors"
@@ -139,7 +146,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
             <div className="grid grid-cols-2 gap-3">
               <button
                 type="button"
-                onClick={() => setMode("home")}
+                onClick={() => handleModeChange("home")}
                 disabled={!puja.modes.includes("home")}
                 className={`py-2.5 px-3 rounded-xl border text-sm font-medium flex items-center justify-center gap-2 transition-all ${
                   mode === "home"
@@ -154,7 +161,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
               </button>
               <button
                 type="button"
-                onClick={() => setMode("online")}
+                onClick={() => handleModeChange("online")}
                 disabled={!puja.modes.includes("online")}
                 className={`py-2.5 px-3 rounded-xl border text-sm font-medium flex items-center justify-center gap-2 transition-all ${
                   mode === "online"
@@ -296,32 +303,44 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
             <label className="block text-xs font-semibold text-amber-950 mb-1">
               Samagri Preference
             </label>
-            <div className="space-y-2">
-              <label className="flex items-center gap-2 p-2.5 bg-white border border-amber-200 rounded-xl cursor-pointer hover:bg-amber-100/30 transition-colors">
-                <input
-                  type="radio"
-                  name="samagriPref"
-                  checked={samagriPreference === "Panditji brings Samagri"}
-                  onChange={() => setSamagriPreference("Panditji brings Samagri")}
-                  className="accent-amber-700 w-4 h-4"
-                />
-                <span className="text-xs sm:text-sm font-medium text-slate-800">
-                  Option 1 — Panditji brings complete Puja Samagri
-                </span>
-              </label>
-              <label className="flex items-center gap-2 p-2.5 bg-white border border-amber-200 rounded-xl cursor-pointer hover:bg-amber-100/30 transition-colors">
-                <input
-                  type="radio"
-                  name="samagriPref"
-                  checked={samagriPreference === "Customer arranges Samagri"}
-                  onChange={() => setSamagriPreference("Customer arranges Samagri")}
-                  className="accent-amber-700 w-4 h-4"
-                />
-                <span className="text-xs sm:text-sm font-medium text-slate-800">
-                  Option 2 — Customer arranges Puja Samagri (List provided)
-                </span>
-              </label>
-            </div>
+            {mode === "online" ? (
+              <div className="p-3 bg-amber-100/70 border border-amber-300 rounded-xl text-xs text-amber-950 space-y-1">
+                <div className="font-bold flex items-center gap-1.5 text-amber-900">
+                  <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0" />
+                  Customer Arranges Basic Samagri (Complete Checklist Provided)
+                </div>
+                <p className="text-slate-700 text-[11px] leading-relaxed">
+                  For Online Pujas via Zoom / Meet, Panditji connects remotely. We will provide you with a simple checklist of basic items (flowers, fruits, ghee, lamp) to keep ready.
+                </p>
+              </div>
+            ) : (
+              <div className="space-y-2">
+                <label className="flex items-center gap-2 p-2.5 bg-white border border-amber-200 rounded-xl cursor-pointer hover:bg-amber-100/30 transition-colors">
+                  <input
+                    type="radio"
+                    name="samagriPref"
+                    checked={samagriPreference === "Panditji brings Samagri"}
+                    onChange={() => setSamagriPreference("Panditji brings Samagri")}
+                    className="accent-amber-700 w-4 h-4"
+                  />
+                  <span className="text-xs sm:text-sm font-medium text-slate-800">
+                    Option 1 — Panditji brings complete Puja Samagri
+                  </span>
+                </label>
+                <label className="flex items-center gap-2 p-2.5 bg-white border border-amber-200 rounded-xl cursor-pointer hover:bg-amber-100/30 transition-colors">
+                  <input
+                    type="radio"
+                    name="samagriPref"
+                    checked={samagriPreference === "Customer arranges Samagri"}
+                    onChange={() => setSamagriPreference("Customer arranges Samagri")}
+                    className="accent-amber-700 w-4 h-4"
+                  />
+                  <span className="text-xs sm:text-sm font-medium text-slate-800">
+                    Option 2 — Customer arranges Puja Samagri (List provided)
+                  </span>
+                </label>
+              </div>
+            )}
           </div>
 
           {/* Notes */}

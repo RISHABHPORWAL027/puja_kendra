@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group focus:outline-none">
-            <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-amber-700 via-amber-600 to-rose-700 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+            <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-amber-800 via-amber-700 to-amber-900 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
               <Flame className="w-6 h-6 text-amber-100 fill-amber-300" />
             </div>
             <div>

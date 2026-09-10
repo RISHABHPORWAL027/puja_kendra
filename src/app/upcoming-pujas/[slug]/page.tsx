@@ -73,7 +73,7 @@ export default async function FestivalDetailPage({ params }: PageProps) {
       <div className="pb-16 pt-6 md:pt-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Hero Banner */}
-          <div className="bg-gradient-to-r from-amber-900 via-amber-950 to-rose-950 text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-xl mb-10">
+          <div className="bg-gradient-to-r from-amber-950 via-amber-900 to-amber-950 text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-xl mb-10 border border-amber-800/50">
             <div className="max-w-3xl space-y-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-bold border border-amber-400/30">
                 <Calendar className="w-3.5 h-3.5 text-amber-400" />

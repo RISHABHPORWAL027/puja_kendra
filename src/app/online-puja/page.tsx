@@ -53,7 +53,7 @@ export default function OnlinePujaPage() {
     <div className="py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
-        <div className="bg-gradient-to-r from-emerald-950 via-slate-900 to-amber-950 text-white rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden shadow-xl mb-12">
+        <div className="bg-gradient-to-r from-amber-950 via-amber-900 to-amber-950 text-white rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden shadow-xl mb-12 border border-amber-800/60">
           <div className="max-w-3xl mx-auto space-y-4">
             <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30">
               <Video className="w-4 h-4 text-emerald-400" />

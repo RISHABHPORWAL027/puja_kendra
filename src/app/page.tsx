@@ -271,7 +271,7 @@ export default function HomePage() {
       <FAQSection />
 
       {/* 11. Final WhatsApp CTA Banner */}
-      <section className="py-12 bg-gradient-to-r from-amber-800 via-amber-900 to-rose-950 text-white text-center">
+      <section className="py-12 bg-gradient-to-r from-amber-950 via-amber-900 to-amber-950 text-white text-center border-t border-amber-800/50">
         <div className="max-w-4xl mx-auto px-4 space-y-4">
           <h2 className="text-2xl sm:text-3xl font-bold font-serif text-amber-100">
             Ready to Book Your Puja or Consult Panditji?

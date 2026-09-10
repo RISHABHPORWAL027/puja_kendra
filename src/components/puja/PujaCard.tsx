@@ -34,7 +34,7 @@ export const PujaCard: React.FC<PujaCardProps> = ({ puja }) => {
         {/* Card Header & Badge */}
         <div>
           {/* Top Banner / Image Placeholder */}
-          <div className="h-44 bg-gradient-to-br from-amber-800 via-amber-700 to-rose-900 relative overflow-hidden flex items-center justify-center p-4">
+          <div className="h-44 bg-gradient-to-br from-amber-900 via-amber-800 to-amber-950 relative overflow-hidden flex items-center justify-center p-4">
             {!imgError ? (
               <img
                 src={puja.image}

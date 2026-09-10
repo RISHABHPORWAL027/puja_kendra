@@ -16,7 +16,7 @@ export const FestivalCard: React.FC<FestivalCardProps> = ({ festival }) => {
     <div className="bg-white border border-amber-200/90 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
       <div>
         {/* Banner */}
-        <div className="h-44 bg-gradient-to-r from-amber-800 via-rose-900 to-amber-950 relative overflow-hidden flex items-center justify-center p-4">
+        <div className="h-44 bg-gradient-to-r from-amber-900 via-amber-800 to-amber-950 relative overflow-hidden flex items-center justify-center p-4">
           {!imgError ? (
             <img
               src={festival.image}

@@ -77,7 +77,7 @@ export const PujaSearch: React.FC<PujaSearchProps> = ({
 
   return (
     <div ref={searchRef} className={`relative w-full ${className}`}>
-      <label className="block text-xs font-bold uppercase tracking-wider text-amber-900 mb-2">
+      <label className="block text-xs font-bold uppercase tracking-wider text-amber-200 mb-2">
         What Puja are you looking for?
       </label>
       <div className="relative flex items-center">
